@@ -85,11 +85,11 @@ def send_email_alert(listings: List[Listing]) -> bool:
     msg.attach(MIMEText(text_body, "plain"))
     msg.attach(MIMEText(html_body, "html"))
 
-    # Try Outlook SMTP first, then Gmail as fallback
+    # Try Gmail first, then Outlook as fallback
     smtp_configs = [
+        ("smtp.gmail.com", 587),
         ("smtp-mail.outlook.com", 587),
         ("smtp.office365.com", 587),
-        ("smtp.gmail.com", 587),
     ]
 
     for host, port in smtp_configs:
