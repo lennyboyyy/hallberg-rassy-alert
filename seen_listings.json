@@ -691,5 +691,12 @@
     "url": "https://www.sailboatlistings.com/view/107718",
     "price_eur": 95680.0,
     "source": "sailboatlistings"
+  },
+  "yachtworld_/boats-for-sale/type-sail/make-hallberg-rassy/": {
+    "first_seen": "2026-03-25T22:13:07.883250",
+    "title": "Hallberg-Rassy",
+    "url": "https://www.yachtworld.com/boats-for-sale/type-sail/make-hallberg-rassy/",
+    "price_eur": null,
+    "source": "yachtworld"
   }
 }
