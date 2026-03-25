@@ -698,5 +698,19 @@
     "url": "https://www.yachtworld.com/boats-for-sale/type-sail/make-hallberg-rassy/",
     "price_eur": null,
     "source": "yachtworld"
+  },
+  "botentekoop_10121875": {
+    "first_seen": "2026-03-25T23:07:55.331632",
+    "title": "1997 Hallberg-Rassy 42F",
+    "url": "https://www.botentekoop.nl/boot/1997-hallberg--rassy-42f-10121875/",
+    "price_eur": 86679.45,
+    "source": "botentekoop"
+  },
+  "botentekoop_9777977": {
+    "first_seen": "2026-03-25T23:07:55.331632",
+    "title": "1980 Hallberg-Rassy 41",
+    "url": "https://www.botentekoop.nl/boot/1980-hallberg--rassy-41-9777977/",
+    "price_eur": 56630.57,
+    "source": "botentekoop"
   }
 }
