@@ -15,7 +15,7 @@ from typing import Dict, List
 
 from scrapers import ALL_SCRAPERS
 from scrapers.base import Listing
-from notifier import send_email_alert
+from notifier import send_email_alert, send_ntfy_alert
 
 # Configuration
 MIN_LENGTH_M = 12.0
@@ -127,9 +127,13 @@ def main() -> int:
         for listing in new_listings:
             logger.info(f"  NEW: {listing.title} — €{listing.price_eur or '?'} — {listing.url}")
 
-        success = send_email_alert(new_listings)
-        if not success:
+        email_ok = send_email_alert(new_listings)
+        if not email_ok:
             logger.error("Failed to send email alert!")
+
+        ntfy_ok = send_ntfy_alert(new_listings)
+        if not ntfy_ok:
+            logger.error("Failed to send ntfy push notification!")
     else:
         logger.info("No new listings found this run.")
 

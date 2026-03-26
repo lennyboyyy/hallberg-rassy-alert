@@ -7,9 +7,13 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from typing import List
 
+import requests
+
 from scrapers.base import Listing
 
 logger = logging.getLogger(__name__)
+
+NTFY_TOPIC = "hallberg-rassy-lander-676767"
 
 
 def send_email_alert(listings: List[Listing]) -> bool:
@@ -112,3 +116,38 @@ def send_email_alert(listings: List[Listing]) -> bool:
 
     logger.error("Failed to send email via all SMTP servers")
     return False
+
+
+def send_ntfy_alert(listings: List[Listing]) -> bool:
+    """Send a push notification via ntfy.sh for new boat listings."""
+    if not listings:
+        return True
+
+    title = f"🚢 {len(listings)} new Hallberg-Rassy boat{'s' if len(listings) > 1 else ''} found!"
+
+    # Build message body
+    lines = []
+    for listing in listings:
+        price_str = f"€{listing.price_eur:,.0f}" if listing.price_eur else "Price unknown"
+        length_str = f"{listing.length_m:.1f}m" if listing.length_m else "Length unknown"
+        lines.append(f"• {listing.title} — {price_str} — {length_str}\n  {listing.url}")
+
+    body = "\n\n".join(lines)
+
+    try:
+        resp = requests.post(
+            f"https://ntfy.sh/{NTFY_TOPIC}",
+            data=body.encode("utf-8"),
+            headers={
+                "Title": title,
+                "Priority": "high",
+                "Tags": "sailboat",
+            },
+            timeout=15,
+        )
+        resp.raise_for_status()
+        logger.info("ntfy push notification sent successfully")
+        return True
+    except Exception as e:
+        logger.error(f"Failed to send ntfy notification: {e}")
+        return False
