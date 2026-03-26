@@ -123,14 +123,14 @@ def send_ntfy_alert(listings: List[Listing]) -> bool:
     if not listings:
         return True
 
-    title = f"🚢 {len(listings)} new Hallberg-Rassy boat{'s' if len(listings) > 1 else ''} found!"
+    title = f"{len(listings)} new Hallberg-Rassy boat{'s' if len(listings) > 1 else ''} found!"
 
     # Build message body
     lines = []
     for listing in listings:
-        price_str = f"€{listing.price_eur:,.0f}" if listing.price_eur else "Price unknown"
+        price_str = f"EUR {listing.price_eur:,.0f}" if listing.price_eur else "Price unknown"
         length_str = f"{listing.length_m:.1f}m" if listing.length_m else "Length unknown"
-        lines.append(f"• {listing.title} — {price_str} — {length_str}\n  {listing.url}")
+        lines.append(f"{listing.title} - {price_str} - {length_str}\n{listing.url}")
 
     body = "\n\n".join(lines)
 
