@@ -4,6 +4,7 @@ from scrapers.boat24 import Boat24Scraper
 from scrapers.theyachtmarket import TheYachtMarketScraper
 from scrapers.botentekoop import BotenTeKoopScraper
 from scrapers.sailboatlistings import SailboatListingsScraper
+from scrapers.boatscom import BoatsComScraper
 
 ALL_SCRAPERS = [
     ScanboatScraper,
@@ -12,4 +13,5 @@ ALL_SCRAPERS = [
     TheYachtMarketScraper,
     BotenTeKoopScraper,
     SailboatListingsScraper,
+    BoatsComScraper,
 ]
