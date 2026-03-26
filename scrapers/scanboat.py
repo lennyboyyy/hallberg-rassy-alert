@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import re
+import time
 from typing import List
 
 from bs4 import BeautifulSoup
@@ -68,6 +69,28 @@ class ScanboatScraper(BaseScraper):
         logger.info(f"[scanboat] Found {len(listings)} listings")
         return listings
 
+    def _fetch_length(self, url: str) -> float | None:
+        """Fetch boat length from the detail page."""
+        try:
+            time.sleep(0.5)  # Be respectful to the server
+            html = self.fetch(url)
+            if not html:
+                return None
+            soup = BeautifulSoup(html, "lxml")
+            # Look for "Length" in a <td> followed by a value <td>
+            for td in soup.find_all("td"):
+                if td.get_text(strip=True).lower() == "length":
+                    next_td = td.find_next_sibling("td")
+                    if next_td:
+                        try:
+                            return float(next_td.get_text(strip=True).replace(",", "."))
+                        except ValueError:
+                            pass
+            return None
+        except Exception as e:
+            logger.warning(f"[scanboat] Failed to fetch length from {url}: {e}")
+            return None
+
     def _parse_card(self, card) -> Listing | None:
         href = card.get("href", "")
         if not href:
@@ -106,10 +129,8 @@ class ScanboatScraper(BaseScraper):
                 if country_match:
                     location = country_match.group(1).strip()
 
-        # Length from image alt text (e.g., "Hallberg-Rassy 352 Sailingboat 1988, with Volvo Penta engine, Denmark")
-        # We don't have explicit length in the card, so we'll rely on the search filter (min 12m)
-        # and set length_m to None — the search already filters by min length
-        length_m = None
+        # Length is not in the listing card, fetch from detail page
+        length_m = self._fetch_length(url)
 
         return Listing(
             title=title,
