@@ -46,9 +46,11 @@ class Listing:
     location: str = ""
 
     def matches_criteria(self, min_length_m: float = 12.0, max_price_eur: float = 100_000) -> bool:
-        if self.price_eur is not None and self.price_eur > max_price_eur:
+        # Length must be known and >= min_length
+        if self.length_m is None or self.length_m < min_length_m:
             return False
-        if self.length_m is not None and self.length_m < min_length_m:
+        # Price can be unknown (e.g. "price on request"), but if known must be <= max
+        if self.price_eur is not None and self.price_eur > max_price_eur:
             return False
         return True
 
