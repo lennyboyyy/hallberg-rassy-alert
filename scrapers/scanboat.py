@@ -77,7 +77,16 @@ class ScanboatScraper(BaseScraper):
             if not html:
                 return None
             soup = BeautifulSoup(html, "lxml")
-            # Look for "Length" in a <td> followed by a value <td>
+            # Look for "Length" in a <dt> followed by a value <dd>
+            for dt in soup.find_all("dt"):
+                if dt.get_text(strip=True).lower() == "length":
+                    dd = dt.find_next_sibling("dd")
+                    if dd:
+                        try:
+                            return float(dd.get_text(strip=True).replace(",", "."))
+                        except ValueError:
+                            pass
+            # Fallback: try <td> elements
             for td in soup.find_all("td"):
                 if td.get_text(strip=True).lower() == "length":
                     next_td = td.find_next_sibling("td")
