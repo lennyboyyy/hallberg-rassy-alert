@@ -1,10 +1,7 @@
 name: Check Boat Listings
 
 on:
-  schedule:
-    # Every 15 minutes
-    - cron: "*/15 * * * *"
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch: # Triggered by cron-job.org every 15 minutes
 
 permissions:
   contents: write
