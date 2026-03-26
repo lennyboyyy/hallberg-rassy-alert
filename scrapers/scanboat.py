@@ -76,25 +76,13 @@ class ScanboatScraper(BaseScraper):
             html = self.fetch(url)
             if not html:
                 return None
-            soup = BeautifulSoup(html, "lxml")
-            # Look for "Length" in a <dt> followed by a value <dd>
-            for dt in soup.find_all("dt"):
-                if dt.get_text(strip=True).lower() == "length":
-                    dd = dt.find_next_sibling("dd")
-                    if dd:
-                        try:
-                            return float(dd.get_text(strip=True).replace(",", "."))
-                        except ValueError:
-                            pass
-            # Fallback: try <td> elements
-            for td in soup.find_all("td"):
-                if td.get_text(strip=True).lower() == "length":
-                    next_td = td.find_next_sibling("td")
-                    if next_td:
-                        try:
-                            return float(next_td.get_text(strip=True).replace(",", "."))
-                        except ValueError:
-                            pass
+            # Length is embedded in a URL parameter: searchcriteria.length=10.54
+            match = re.search(r"searchcriteria\.length=([\d.]+)", html, re.IGNORECASE)
+            if match:
+                try:
+                    return float(match.group(1))
+                except ValueError:
+                    pass
             return None
         except Exception as e:
             logger.warning(f"[scanboat] Failed to fetch length from {url}: {e}")
