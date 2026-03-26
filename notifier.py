@@ -16,6 +16,7 @@ def send_email_alert(listings: List[Listing]) -> bool:
     """Send an email alert for new boat listings."""
     email_address = os.environ.get("EMAIL_ADDRESS")
     email_password = os.environ.get("EMAIL_PASSWORD")
+    email_to = os.environ.get("EMAIL_TO", email_address)  # Default: send to self
 
     if not email_address or not email_password:
         logger.error("EMAIL_ADDRESS or EMAIL_PASSWORD not set")
@@ -80,7 +81,7 @@ def send_email_alert(listings: List[Listing]) -> bool:
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = email_address
-    msg["To"] = email_address  # Send to yourself
+    msg["To"] = email_to
 
     msg.attach(MIMEText(text_body, "plain"))
     msg.attach(MIMEText(html_body, "html"))
