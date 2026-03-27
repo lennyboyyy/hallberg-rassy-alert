@@ -229,5 +229,12 @@
     "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-94-kutter-17509965",
     "price_eur": 48000.0,
     "source": "scanboat"
+  },
+  "boat24_488192": {
+    "first_seen": "2026-03-27T11:03:39.308726",
+    "title": "Hallberg-Rassy 39 MkII",
+    "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-39-mkii/detail/488192/",
+    "price_eur": null,
+    "source": "boat24"
   }
 }
