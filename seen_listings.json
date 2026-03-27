@@ -187,5 +187,47 @@
     "url": "https://www.caraibe-yachts.com/en/bateaux/monohulls/hallberg-rassy-42-f",
     "price_eur": 75000.0,
     "source": "caraibeyachts"
+  },
+  "scanboat_17524364": {
+    "first_seen": "2026-03-27T01:18:29.893962",
+    "title": "Hallberg-Rassy 29",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-29-17524364",
+    "price_eur": 35110.0,
+    "source": "scanboat"
+  },
+  "scanboat_17524310": {
+    "first_seen": "2026-03-27T01:18:29.893962",
+    "title": "Hallberg Rassy 312 Mk I (1985)",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-312-mk-i-(1985)-17524310",
+    "price_eur": 39835.0,
+    "source": "scanboat"
+  },
+  "scanboat_17523370": {
+    "first_seen": "2026-03-27T01:18:29.893962",
+    "title": "Hallberg-Rassy 94 Kutter",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-94-kutter-17523370",
+    "price_eur": 45730.0,
+    "source": "scanboat"
+  },
+  "scanboat_17535606": {
+    "first_seen": "2026-03-27T01:18:29.893962",
+    "title": "Hallberg-Rassy Kutter",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-kutter-17535606",
+    "price_eur": 55000.0,
+    "source": "scanboat"
+  },
+  "scanboat_17523931": {
+    "first_seen": "2026-03-27T01:18:29.893962",
+    "title": "Hallberg-Rassy 34",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-34-17523931",
+    "price_eur": 70220.0,
+    "source": "scanboat"
+  },
+  "scanboat_17509965": {
+    "first_seen": "2026-03-27T01:18:29.893962",
+    "title": "Hallberg-Rassy 94 Kutter",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-94-kutter-17509965",
+    "price_eur": 48000.0,
+    "source": "scanboat"
   }
 }
