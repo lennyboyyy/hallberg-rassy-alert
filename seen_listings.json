@@ -236,5 +236,47 @@
     "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-39-mkii/detail/488192/",
     "price_eur": null,
     "source": "boat24"
+  },
+  "scanboat_17537858": {
+    "first_seen": "2026-04-13T15:18:45.627973",
+    "title": "Hallberg-Rassy 400",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-400-17537858",
+    "price_eur": null,
+    "source": "scanboat"
+  },
+  "scanboat_17537859": {
+    "first_seen": "2026-04-13T15:18:45.627973",
+    "title": "Hallberg-Rassy 40C",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-40c-17537859",
+    "price_eur": null,
+    "source": "scanboat"
+  },
+  "scanboat_17537860": {
+    "first_seen": "2026-04-13T15:18:45.627973",
+    "title": "Hallberg-Rassy 44 MK II",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-44-mk-ii-17537860",
+    "price_eur": null,
+    "source": "scanboat"
+  },
+  "scanboat_17537861": {
+    "first_seen": "2026-04-13T15:18:45.627973",
+    "title": "Hallberg-Rassy 50",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-50-17537861",
+    "price_eur": null,
+    "source": "scanboat"
+  },
+  "scanboat_17537862": {
+    "first_seen": "2026-04-13T15:18:45.627973",
+    "title": "Hallberg-Rassy 57",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-57-17537862",
+    "price_eur": null,
+    "source": "scanboat"
+  },
+  "scanboat_17537863": {
+    "first_seen": "2026-04-13T15:18:45.627973",
+    "title": "Hallberg-Rassy 69",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-69-17537863",
+    "price_eur": null,
+    "source": "scanboat"
   }
 }
