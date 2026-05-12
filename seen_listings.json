@@ -334,5 +334,12 @@
     "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-41-ketch-17539724",
     "price_eur": 92000.0,
     "source": "scanboat"
+  },
+  "boat24_713859": {
+    "first_seen": "2026-05-12T04:18:51.548639",
+    "title": "Hallberg-Rassy Hallberg Rassy 41 Ketch",
+    "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-hallberg-rassy-41-ketch/detail/713859/",
+    "price_eur": 92000.0,
+    "source": "boat24"
   }
 }
