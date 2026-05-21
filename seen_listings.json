@@ -348,5 +348,12 @@
     "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-----hallberg-rassy-42-17539949",
     "price_eur": 92590.0,
     "source": "scanboat"
+  },
+  "boat24_716015": {
+    "first_seen": "2026-05-21T11:04:00.489105",
+    "title": "Hallberg-Rassy HR 42",
+    "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-hr-42/detail/716015/",
+    "price_eur": null,
+    "source": "boat24"
   }
 }
