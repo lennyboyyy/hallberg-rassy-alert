@@ -229,5 +229,19 @@
     "url": "https://www.caraibe-yachts.com/en/bateaux/monohulls/hallberg-rassy-42-f",
     "price_eur": 75000.0,
     "source": "caraibeyachts"
+  },
+  "boat24_692385": {
+    "first_seen": "2026-06-24T20:03:37.635237",
+    "title": "Hallberg-Rassy HR41",
+    "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-hr41/detail/692385/",
+    "price_eur": 72000.0,
+    "source": "boat24"
+  },
+  "boat24_639319": {
+    "first_seen": "2026-06-24T20:03:37.635237",
+    "title": "Hallberg-Rassy HR 45",
+    "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-hr-45/detail/639319/",
+    "price_eur": null,
+    "source": "boat24"
   }
 }
