@@ -243,5 +243,19 @@
     "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-hr-45/detail/639319/",
     "price_eur": null,
     "source": "boat24"
+  },
+  "boat24_244624": {
+    "first_seen": "2026-06-25T01:18:24.517286",
+    "title": "Hallberg-Rassy 44",
+    "url": "https://www.boat24.com/en/catalog/sailingboats/hallberg-rassy/44/2025/244624/",
+    "price_eur": null,
+    "source": "boat24"
+  },
+  "boat24_246432": {
+    "first_seen": "2026-06-25T01:18:24.517286",
+    "title": "Hallberg-Rassy 69",
+    "url": "https://www.boat24.com/en/catalog/sailingboats/hallberg-rassy/69/2026/246432/",
+    "price_eur": null,
+    "source": "boat24"
   }
 }
