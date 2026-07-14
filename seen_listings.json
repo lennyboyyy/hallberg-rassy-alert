@@ -1,11 +1,4 @@
 {
-  "boat24_691074": {
-    "first_seen": "2026-04-15T05:18:31.454718",
-    "title": "Hallberg-Rassy 41",
-    "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-41/detail/691074/",
-    "price_eur": 95000.0,
-    "source": "boat24"
-  },
   "boat24_709978": {
     "first_seen": "2026-04-23T08:48:51.937883",
     "title": "Hallberg-Rassy 50",
@@ -320,5 +313,12 @@
     "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-49-17542665",
     "price_eur": 50000.0,
     "source": "scanboat"
+  },
+  "boat24_691074": {
+    "first_seen": "2026-07-14T05:33:36.894934",
+    "title": "Hallberg-Rassy 41",
+    "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-41/detail/691074/",
+    "price_eur": 95000.0,
+    "source": "boat24"
   }
 }
