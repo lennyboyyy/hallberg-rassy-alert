@@ -341,5 +341,12 @@
     "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-42-f-17547210",
     "price_eur": 78000.0,
     "source": "scanboat"
+  },
+  "boat24_738597": {
+    "first_seen": "2026-08-27T04:18:26.987425",
+    "title": "Hallberg-Rassy Hallberg Rassy 42 F",
+    "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-hallberg-rassy-42-f/detail/738597/",
+    "price_eur": 78000.0,
+    "source": "boat24"
   }
 }
