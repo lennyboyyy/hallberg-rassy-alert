@@ -1,39 +1,4 @@
 {
-  "scanboat_17478486": {
-    "first_seen": "2026-06-24T18:18:22.774490",
-    "title": "Hallberg-Rassy 41 Ketch",
-    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-41-ketch-17478486",
-    "price_eur": 87165.0,
-    "source": "scanboat"
-  },
-  "scanboat_17447181": {
-    "first_seen": "2026-06-24T18:18:22.774490",
-    "title": "Hallberg Rassy 46 - Solgt / Sold / Verkauft",
-    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-46---solgt--sold--verkauft-17447181",
-    "price_eur": null,
-    "source": "scanboat"
-  },
-  "scanboat_17401018": {
-    "first_seen": "2026-06-24T18:18:22.774490",
-    "title": "Hallberg Rassy 42 F Mkii / Sold / Verkauft / Solgt",
-    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-42-f-mkii--sold--verkauft--solgt-17401018",
-    "price_eur": null,
-    "source": "scanboat"
-  },
-  "sailboatlistings_107718": {
-    "first_seen": "2026-06-24T18:18:22.774490",
-    "title": "Hallberg-Rassy HR41",
-    "url": "https://www.sailboatlistings.com/view/107718",
-    "price_eur": 95680.0,
-    "source": "sailboatlistings"
-  },
-  "caraibeyachts_23150": {
-    "first_seen": "2026-06-24T18:18:22.774490",
-    "title": "Hallberg Rassy 42 F",
-    "url": "https://www.caraibe-yachts.com/en/bateaux/monohulls/hallberg-rassy-42-f",
-    "price_eur": 75000.0,
-    "source": "caraibeyachts"
-  },
   "boat24_692385": {
     "first_seen": "2026-06-24T20:03:37.635237",
     "title": "Hallberg-Rassy HR41",
@@ -348,5 +313,33 @@
     "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-41/detail/720312/",
     "price_eur": 55000.0,
     "source": "boat24"
+  },
+  "scanboat_17478486": {
+    "first_seen": "2026-09-22T18:33:18.852175",
+    "title": "Hallberg-Rassy 41 Ketch",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-41-ketch-17478486",
+    "price_eur": 87165.0,
+    "source": "scanboat"
+  },
+  "scanboat_17447181": {
+    "first_seen": "2026-09-22T18:33:18.852175",
+    "title": "Hallberg Rassy 46 - Solgt / Sold / Verkauft",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-46---solgt--sold--verkauft-17447181",
+    "price_eur": null,
+    "source": "scanboat"
+  },
+  "scanboat_17401018": {
+    "first_seen": "2026-09-22T18:33:18.852175",
+    "title": "Hallberg Rassy 42 F Mkii / Sold / Verkauft / Solgt",
+    "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-42-f-mkii--sold--verkauft--solgt-17401018",
+    "price_eur": null,
+    "source": "scanboat"
+  },
+  "sailboatlistings_107718": {
+    "first_seen": "2026-09-22T18:33:18.852175",
+    "title": "Hallberg-Rassy HR41",
+    "url": "https://www.sailboatlistings.com/view/107718",
+    "price_eur": 82800.0,
+    "source": "sailboatlistings"
   }
 }
