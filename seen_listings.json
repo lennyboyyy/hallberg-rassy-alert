@@ -327,5 +327,12 @@
     "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-hallberg-rassy-41-ketch/detail/747611/",
     "price_eur": 84000.0,
     "source": "boat24"
+  },
+  "boat24_409976": {
+    "first_seen": "2026-10-08T17:32:15.928649",
+    "title": "Hallberg-Rassy HR 41 ketch",
+    "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-hr-41-ketch/detail/409976/",
+    "price_eur": 67000.0,
+    "source": "boat24"
   }
 }
