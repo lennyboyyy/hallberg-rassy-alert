@@ -320,5 +320,12 @@
     "url": "https://www.scanboat.com/en/boat-market/boats/sailingboat-hallberg-rassy-69-17537863",
     "price_eur": null,
     "source": "scanboat"
+  },
+  "boat24_741935": {
+    "first_seen": "2026-10-12T13:33:29.243864",
+    "title": "Hallberg-Rassy 49",
+    "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-49/detail/741935/",
+    "price_eur": null,
+    "source": "boat24"
   }
 }
