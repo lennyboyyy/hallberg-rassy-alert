@@ -341,5 +341,12 @@
     "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-hallberg-rassy-42-f-mk-i/detail/738597/",
     "price_eur": 78000.0,
     "source": "boat24"
+  },
+  "boat24_738812": {
+    "first_seen": "2026-11-27T08:03:53.326794",
+    "title": "Hallberg-Rassy HR 42",
+    "url": "https://www.boat24.com/en/sailingboats/hallberg-rassy/hallberg-rassy-hr-42/detail/738812/",
+    "price_eur": 100000.0,
+    "source": "boat24"
   }
 }
